@@ -586,39 +586,3 @@
 }
 
 @end
-
-
-//                        //内容存文件
-//                        NSString *umdFolder = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/umd"];
-//                        if ([[NSFileManager defaultManager] fileExistsAtPath:umdFolder] == NO)
-//                        {
-//                            [[NSFileManager defaultManager] createDirectoryAtPath:umdFolder withIntermediateDirectories:YES attributes:nil error:nil];
-//                        }
-//                        NSString *zipName = [NSString stringWithFormat:@"%@%@",[umd.title md5],@".zip"];//[umd.title md5]
-//                        NSString *zipFilePath = [umdFolder stringByAppendingPathComponent:zipName];
-//                        NSLog(@"%@",zipFilePath);
-//
-//                        if (![[NSFileManager defaultManager] fileExistsAtPath:zipFilePath])
-//                        {
-//                            if([[NSFileManager defaultManager] createFileAtPath:zipFilePath contents:allContentData attributes:nil])
-//                            {
-//                                 NSLog(@"error:文本成功写入");
-//                            }
-//                            else
-//                            {
-//                                NSLog(@"error:文本失败写入");
-//                            }
-//                            //解压contentData
-////                            NSString *txtName = [NSString stringWithFormat:@"%@",@"umd"];//[umd.title md5]
-////                            NSString *txtFilePath = [umdFolder stringByAppendingPathComponent:txtName];
-//                            ZipArchive *zipArchive = [[ZipArchive alloc] init];
-//
-//                            if ([zipArchive UnzipOpenFile:zipFilePath])
-//                            {
-//                                [zipArchive UnzipFileTo:[zipFilePath stringByDeletingPathExtension] overWrite:YES];
-//                            }
-//
-//                            [zipArchive UnzipCloseFile];
-//                            [zipArchive release];
-//                        }
-//                        //内容存文件
